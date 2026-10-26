@@ -2,6 +2,8 @@
 
 Rating card created using React, PropTypes, styled-components, Google Poppins, Jest and Testing Library.
 
+![Product rating card showing a 4.6 out of 5 score and the review distribution](docs/product-rating.png)
+
 ## Run
 
 Requires Node.js 24.11+ and npm.
@@ -50,7 +52,3 @@ Omitting `counts` shows "No reviews yet"; invalid counts show "Rating unavailabl
 - `styles/colors`: shared UI colors; edit them here without adding a theme provider. The bundled logo retains its own brand colors.
 
 Bars show each count as a proportion of all reviews. The sample has 1,232 reviews and displays 4.6 out of 5. Integer arithmetic (`BigInt`) rounds halfway values up exactly, including 4.15 to 4.2 and large-count cases. Labels use the rounded score: Excellent >= 4.5, Great >= 3.5, Average >= 2.5, Poor >= 1.5, otherwise Bad.
-
-## Technical note
-
-React 19 does not run function-component PropTypes automatically, so `RatingCard` explicitly checks its public props in development/test. Count validation also runs in production before calculations.
