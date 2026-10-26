@@ -2,7 +2,7 @@
 
 Rating card created using React, PropTypes, styled-components, Google Poppins, Jest and Testing Library.
 
-![Product rating card showing a 4.6 out of 5 score and the review distribution](docs/product-rating.png)
+<img src="docs/product-rating.png" alt="Product rating card showing a 4.6 out of 5 score and the review distribution" width="360" />
 
 ## Run
 
